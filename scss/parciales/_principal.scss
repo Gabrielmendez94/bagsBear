@@ -1,0 +1,67 @@
+.carousel-inner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    height: auto;
+    grid-template-columns: 25% 75%;
+
+
+    &_categorias{
+//        background-color: green;
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    
+        &-titulo{
+            margin-bottom: 20px;
+        }
+    
+        &-item{
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                color: black;
+                text-decoration:underline;
+            }
+        }
+    }
+    &_productos{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 222px 222px 222px 222px;
+        grid-template-rows: 310px 310px 310px;
+        grid-row-gap: 7px;
+        grid-column-gap: 15px;
+    
+/*        &-mercaderia{
+            border: solid 1px orange;
+        }*/
+
+        &-enlace, &-precio, &-cuota{
+            text-align: center;
+        }
+
+        &-enlace{
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                color: black;
+                text-decoration: underline;
+            }
+        }
+
+        &-cuota{
+            border: solid 1px black;
+        }
+
+    }
+}

@@ -1,0 +1,22 @@
+.navegador{
+    width: 90%;
+    margin: auto;
+    &_titulo{
+        text-align: center;
+        font-size: 5rem;
+        margin: 1rem 1rem;
+    }
+    &_lista{
+        display: flex;
+        justify-content: space-around;
+        margin: 0.6rem 0.6rem;
+    
+        &-item{   
+            list-style-type: none;
+            &-link{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
